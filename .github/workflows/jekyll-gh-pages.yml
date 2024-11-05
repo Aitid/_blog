@@ -1,31 +1,33 @@
-name: _Update Jekyll site CI_
+name: Build and Deploy
+
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    branches:
+      - main
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Install Dependencies
-      run: npm install
-      
-    - name: Build the site in the jekyll/builder container
-      env:
-        NODE_ENV: production
-      run: |
-        docker run \
-        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
-        
-    - name: GitHub Pages
-      uses: crazy-max/ghaction-github-pages@v2.5.0
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
       with:
-       build_dir: _site/
-      env:
-       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        node-version: '20'  # You can specify the exact version or use '20'
+
+    - name: Install dependencies
+      run: |
+        npm install
+
+    - name: Build styles
+      run: |
+        npm run build
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./assets/css
