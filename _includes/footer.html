@@ -1,21 +1,13 @@
-<footer class="py-6" id="footer">
-  <div class="mx-auto">
-    <div class="w-fit mx-auto">
-      
-
-      <div class="flex mb-8 gap-3 mt-4">
-        {% for item in site.data.social %}
-        <a rel="me" href="{{ item.link }}" target="_blank"><img width="24" height="24" src="{{ item.image }}"
-            alt="{{ item.name }}" /></a>
-        {% endfor %}
-      </div>
-      <div class="text-sm text-gray-600">
-        <span>Free Jekyll theme by</span>
-        <a class="text-green-500" href="https://www.zerostatic.io" rel="nofollow" target="_blank">Zerostatic
-          Themes</a>.
-        Emoji icons complements of <a class="text-green-500" href="https://twemoji.twitter.com" rel="nofollow"
-          target="_blank">Twitter&rsquo;s Twemoji</a>.
-      </div>
+<footer class="py-6 border-t-2">
+  <div class="container mx-auto">
+    <div class="flex mb-2">
+      {% for item in site.data.social %}
+      <a class="py-2 mr-2" href="{{ item.link }}"><img width="24" height="24" src="{{ item.image }}" alt="{{ item.name }}" /></a>
+      {% endfor %}
     </div>
-  </div>
+    <div class="text-sm text-gray-600">
+      <span>Free Jekyll theme by</span>
+<a class="text-green-500" href="
+        https://www.zerostatic.io">Zerostatic Themes</a>
+    </div>
 </footer>

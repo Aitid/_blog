@@ -1,57 +1,90 @@
-<header>
+# Jekyll Atlantic - A Jekyll Tailwind Theme
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+Atlantic is a beautiful Tailwind CSS theme. It shows best practices for using Tailwind with Jekyll.
 
-# GitHub Pages
+[Live Demo](https://jekyll-atlantic.netlify.app/) | [Zerostatic Themes](https://www.zerostatic.io/theme/jekyll-atlantic/)
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+![Jekyll Atlantic Theme screenshot](https://www.zerostatic.io/theme/jekyll-atlantic/jekyll-atlantic-screenshot.png)
 
-</header>
+### Theme features
 
-<!--
-  <<< Author notes: Finish >>>
-  Review what we learned, ask for feedback, provide next steps.
--->
+<img width="18" height="18" src="https://jamstackthemes.dev/images/icons/jekyll.svg" /> [Jekyll](https://jekyllrb.com/) 4.1+
+<img width="18" height="18" src="https://jamstackthemes.dev/images/icons/tailwind.svg" /> [Tailwind CSS](https://tailwindcss.com/docs) v2.2+
+<img width="18" height="18" src="https://jamstackthemes.dev/images/icons/postcss.svg" /> [PostCSS](https://postcss.org/) 8.3+
 
-## Finish
+- Uses PostCSS with autoprefixer, nested css, cssnano (minify css) 
+- Works with native Jekyll commands `jekyll serve` and `jekyll build`
+- Correctly uses Tailwind to purge CSS in production
+- Full blog functionality
+- Beautfifuly designed responsive blog and post layouts
+- Blog categories
+- Blog authors (multiple)
+- Blog pagination
+- Ready to deploy to Netlify
+- Responsive design
+- Responsive menu
+- 100/100 Google Lighthouse speed score ⚡
+- 100/100 Google Lighthouse seo score 🏆
+- 94/100 Google Lighthouse accessibility score (but this is just because of the green text color contrast)
+- Page size is 10KB without images, can you believe it?? 🔥
+- Robust example content included
+- Royalty free illustrations included
+- Netlify & Github Pages ready
 
-_Congratulations friend, you've completed this course!_
+## Installation
 
-<img src=https://octodex.github.com/images/constructocat2.jpg alt=celebrate width=300 align=right>
+### Installing Ruby & Jekyll
+ 
+If this is your first time using Jekyll, please follow the [Jekyll docs](https://jekyllrb.com/docs/installation/) and make sure your local environment (including Ruby) is setup correctly.
 
-Your blog is now live and has been deployed!
+### Installing Theme
 
-Here's a recap of all the tasks you've accomplished in your repository:
+Download or clone the theme.
 
-- You enabled GitHub Pages.
-- You selected a theme using the config file.
-- You learned about proper directory format and file naming conventions in Jekyll.
-- You created your first blog post with Jekyll!
+To run the theme locally, navigate to the theme directory and run:
 
-### What's next?
+To use Tailwind and PostCSS:
 
-- Keep working on your GitHub Pages site... we love seeing what you come up with!
-- We'd love to hear what you thought of this course [in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages).
-- [Take another GitHub Skills course](https://github.com/skills).
-- [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started).
-- To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
+```
+npm install
+```
 
-<footer>
+```
+bundle install
+``` 
 
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
+To start the Jekyll local development server.
 
----
+```
+bundle exec jekyll serve
+``` 
 
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
+To build the theme.
+ 
+```
+bundle exec jekyll build
+```
 
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+## Deployment
 
-</footer>
+### Netlify
+
+Use Netlify to deploy this theme. This theme contains a valid and tested `netlify.toml`
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zerostaticthemes/jekyll-atlantic-theme)
+
+### Github Pages
+This theme has been tested to work with Github Pages (and Github Project Pages). When using Github Pages you will need to update the `baseurl` in the `_config.yml` otherwise all the css, images and paths will be broken.
+
+For example the site https://zerostaticthemes.github.io/jekyll-atlantic-theme would have `baseurl: "/jekyll-atlantic-theme/"`
+
+### Credits
+
+- Stock images by Unsplash - https://unsplash.com/
+- Feature icons by Noun Project - https://thenounproject.com/
+
+### License
+
+This theme is open source under the MIT license. 
+
+> Please do not create ports of this theme. You can't re-distribute or re-sell this theme as a theme, stock, in a tool or as a template.
