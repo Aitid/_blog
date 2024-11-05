@@ -16,7 +16,7 @@ body_classes: page-basic
 {% endif %}
 
 {% if page.image %}
-  <img {% imagesize post.image:props %} src="{{ page.image }}" />
+  <img src="{{ page.image }}" />
   {% if page.image_credit %}
     <p class="text-sm text-gray-400 text-center">{{ page.image_credit }}</p>
   {% endif %}
