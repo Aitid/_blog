@@ -1,29 +1,41 @@
 ---
 layout: basic
-title: "About"
-authors: ['tyler']
+title: "About Us"
+date: 2018-11-28T15:15:34+10:00
 permalink: "/about/"
+description: "Business plan hackathon handshake responsive web design."
+image: "https://source.unsplash.com/Dq5P6eWZXNY/1600x900"
 ---
 
-<div class="float-right ml-2 sm:ml-8" style="float: right">
-    <img src="/assets/images/author/tyler-young.jpg" class="rounded-full w-48" style="margin: 0 0 0.25rem; width: 12rem;">
-</div>
+# Creating Modern Websites
 
-👋 Hey there!
+Web design encompasses many different skills and disciplines in the production and maintenance of websites.
 
-I’m Tyler Young.
+Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all. Web design partially overlaps web engineering in the broader scope of web development.
 
-I'm a product-focused developer who likes creating things that makes people’s lives better. I’ve spent more than a decade in software working on soft-real time systems, including collaborative mapmaking, game dev, video streaming, and IoT command-and-control systems.
+## What is Web Design?
 
-Today, I'm building a new take on website monitoring called [SleepEasy](https://www.sleepeasy.app) and doing contracting & consulting on the side. I blog about the behind-the-scenes stuff (tech choices, marketing, customer development, and more) in the [#BuildInPublic](/category/build-in-public/) category here.
+User experience is about how a user interacts with, and experiences, a particular product, system or service. As a UX designer, you should consider the Why, What and How of product use.
 
-In the past, I’ve been fortunate to work on a handful of other interesting projects:
+## Front-end Development
 
-* [Felt](https://felt.com), an outrageously powerful tool for making maps on the internet. Our tech stack was Elixir, React, and Postgres, deployed on Render.
-* [CBTea](https://www.cbtea.app), a Phoenix LiveView app that acts as a journal for a core exercise in cognitive behavioral therapy (CBT). See the announcement post [here](/2023/07/28/cbtea-release/).
-* Symphony, a SaaS made by [Generac Grid Services](https://www.enbala.com) (née Enbala) that helps energy utilities balance electricity production against demand. This was an Elixir back-end communicating with an Elm (❤️) front-end over GraphQL.
-* [Duet](https://www.duetdisplay.com), an app that turns iPads and other mobile devices into extra monitors for your computer.
-* The [X-Plane](http://www.x-plane.com) flight simulator. Among other things, I was solely responsible for the massive multiplayer implementation (both client- and server-side) that we shipped in 2020 on the mobile app. I was also responsible for the UI rewrite we did for X-Plane 11 on the desktop, and I’ve worked on various pieces of the low-level platform integration (we run on Windows, Mac, Linux, iOS, and Android).
-* A Mac photo browser called [Unbound](https://www.unboundapp.com/). When I took it over from the previous dev, it was in rough shape—it crashed if you looked at it wrong, it failed to display images correctly, and the marketing failed to explain why you would want to use the app. I spent a few months overhauling the marketing and fixing bugs, then finally started shipping new features. I also started transitioning the Objective-C codebase to Swift (and SwiftUI, where appropriate).
+The What addresses the things people can do with a product—its functionality. Finally, the How relates to the design of functionality in an accessible and aesthetically pleasant way. UX designers start with the Why before determining the What and then, finally, the How in order to create products that users can form meaningful experiences with. In software designs, you will need to ensure the product’s “substance” comes through an existing device and offers a seamless, fluid experience.
 
-You can download my resume [as a PDF](/assets/files/tyler-young-resume.pdf), or find me on Twitter [@TylerAYoung](https://twitter.com/TylerAYoung). I'm also on Mastodon [@tylerayoung@fosstodon.org](https://fosstodon.org/web/@tylerayoung).
+> As a UX designer, you should consider the Why, What and How of product use.
+
+Web designers are expected to have an awareness of usability and if their role involves creating markup then they are also expected to be up to date with web accessibility guidelines.
+
+## Design Systems
+
+A Design System is a set of interconnected patterns and shared practices coherently organized to aid in digital product design and development of products such as apps or websites.
+
+## Process
+
+There are two primary jobs involved in creating a website: the web designer and web developer, who often work closely together on a website. The web designers are responsible for the visual aspect, which includes the layout, coloring and typography of a web page.
+
+- User experience research
+- Visual design and illustration
+- Programming and coding
+
+
+Web designers will also have a working knowledge of markup languages such as HTML and CSS, although the extent of their knowledge will differ from one web designer to another.

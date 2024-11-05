@@ -4,23 +4,7 @@ module.exports = {
   purge: [
     "./_includes/**/*.html",
     "./_layouts/**/*.html",
-    "./blog/*.html",
-    "./_posts/*.html",
-    "./*.html",
-    './collections/_posts/*.{html,md}',
-    './categories/*.{html,md}',
-    './_drafts/*.{html,md}',
-    './_includes/*html',
-    './_layouts/*.html',
-    './*.{html,md}',
-  ],
-  content: [
-    './collections/_posts/*.{html,md}',
-    './categories/*.{html,md}',
-    './_drafts/*.{html,md}',
-    './_includes/*html',
-    './_layouts/*.html',
-    './*.{html,md}',
+    "./blog/index.html"
   ],
   darkMode: false,
   theme: {
@@ -29,14 +13,16 @@ module.exports = {
       md: "768px",
       lg: "1024px",
       xl: "1280px",
-    },
+    }
   },
   variants: {
     extend: {
       grayscale: ["hover", "focus"],
-      margin: ["last"],
+      margin: ['last']
     },
     container: [],
   },
-  plugins: [require("@tailwindcss/typography"), require('@tailwindcss/forms')],
+  plugins: [
+    require("@tailwindcss/typography")
+  ],
 };
