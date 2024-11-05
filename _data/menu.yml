@@ -1,10 +1,25 @@
 main:
-  - name: "Home"
+  - name: "Blog"
     url: "/"
     weight: 1
-  - name: "Blog"
-    url: "/blog/"
-    weight: 2
+    classes: "md:hidden"
   - name: "About"
     url: "/about/"
+    weight: 2
+    classes: ""
+  - name: "#BuildInPublic"
+    url: "/category/build-in-public/"
     weight: 3
+    classes: ""
+  - name: "Programming"
+    url: "/category/programming/"
+    weight: 3
+    classes: ""
+  - name: "Work"
+    url: "/category/work/"
+    weight: 5
+    classes: ""
+  - name: "All Categories"
+    url: "/categories/"
+    weight: 6
+    classes: ""

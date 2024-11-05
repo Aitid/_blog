@@ -1,7 +1,27 @@
 [
   {
+    "name": "Twitter",
+    "link": "https://twitter.com/TylerAYoung",
+    "image": "/assets/images/twitter.svg"
+  },
+  {
+    "name": "Mastodon",
+    "link": "https://fosstodon.org/@tylerayoung",
+    "image": "https://simpleicons.org/icons/mastodon.svg"
+  },
+  {
+    "name": "LinkedIn",
+    "link": "https://www.linkedin.com/in/tyler-young-dev/",
+    "image": "https://simpleicons.org/icons/linkedin.svg"
+  },
+  {
     "name": "Github",
-    "link": "https://github.com/zerostaticthemes/jekyll-atlantic-theme",
+    "link": "https://github.com/s3cur3",
     "image": "https://simpleicons.org/icons/github.svg"
+  },
+  {
+    "name": "StackOverflow",
+    "link": "https://stackoverflow.com/users/1417451/s3cur3",
+    "image": "https://simpleicons.org/icons/stackoverflow.svg"
   }
 ]

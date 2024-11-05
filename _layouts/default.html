@@ -4,21 +4,53 @@
     <meta charset="utf-8">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval'">
 
     {% include meta.html %}
 
     <link rel="icon" href="{{ '/favicon.png' | relative_url }}">
     <link href="{{ '/assets/css/style.css' | relative_url }}" rel="stylesheet">
+    <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
+    <script async defer src="https://us.umami.is/script.js" data-website-id="2f3c03ff-e0aa-41e9-9c26-cb348f517aa9"></script>
   </head>
   <body class="page {{page.bodyClass}}">
-    {% include mobile-menu.html %}
-    <div class="container mx-auto px-6 md:px-4">
+    {% include menu-mobile.html %}
+    <div class="container mx-auto px-4">
       {% include header.html %}
       {{content}}
       {% include footer.html %}
     </div>
     {% include google-analytics.html %}
-    <script type="text/javascript" src="{{ '/assets/js/hamburger.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/js/glightbox.min.js' | relative_url }}"></script>
+    <script type="text/javascript">
+      // Hamburger menu for mobile
+      var body = document.querySelector('body');
+      var menuOpenTrigger = document.querySelector('#menu-trigger');
+      var menuCloseTrigger = document.querySelector('#menu-close');
+      var menuContainer = document.querySelector('#menu-container');
+      var hamburgerIcon = document.querySelector('.hamburger');
+
+      if (menuOpenTrigger !== null) {
+        menuOpenTrigger.addEventListener('click', function(e) {
+          console.log("asldj")
+          menuContainer.classList.toggle('hidden');
+          menuContainer.classList.toggle('flex');
+          hamburgerIcon.classList.toggle('is-active');
+          body.classList.toggle('lock-scroll');
+        });
+        menuCloseTrigger.addEventListener('click', function(e) {
+          console.log("asldj")
+          menuContainer.classList.toggle('hidden');
+          menuContainer.classList.toggle('flex');
+          hamburgerIcon.classList.toggle('is-active');
+          body.classList.toggle('lock-scroll');
+        });
+      }
+
+      const lightbox = GLightbox({
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: true
+      });
+    </script>
   </body>
 </html>

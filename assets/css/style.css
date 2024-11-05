@@ -1,13 +1,15 @@
 ---
 ---
-Content-Security-Policy: script-src 'self' 'unsafe-eval';
 
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@import "assets/css/glightbox/glightbox.css";
 @import "assets/css/custom.css";
 @import "assets/css/syntax/monokai";
+
+.w-fit { max-width: fit-content; }
 
 @layer components {
   .heading {
@@ -28,4 +30,8 @@ Content-Security-Policy: script-src 'self' 'unsafe-eval';
       }
     }
   }
+}
+
+.blog-listing .hidden-on-blog-listing {
+  @apply hidden;
 }
