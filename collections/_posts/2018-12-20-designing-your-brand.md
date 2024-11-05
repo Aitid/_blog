@@ -4,7 +4,6 @@ date: 2018-12-20T09:49:03+10:00
 layout: post
 categories: ["Branding"]
 description: Branding is an intrinsic part of your companies success, learn why your brand matters.
-thumbnail: "https://source.unsplash.com/YmQ0-nmWcV0/640x360"
 image: "https://source.unsplash.com/YmQ0-nmWcV0/1600x900"
 ---
 
@@ -44,7 +43,6 @@ From 2012, a group of people including Jeff Atwood and John MacFarlane launched 
 
 In 2017, GitHub released a formal specification of their GitHub Flavored Markdown (GFM) that is based on CommonMark. It follows the CommonMark specification exactly except for tables, strikethrough, autolinks and task lists, which the GitHub spec has added as extensions.
 
-![unsplash](https://source.unsplash.com/3igFnx0L2pY/640x360)
 
 ### Markdown Extra
 

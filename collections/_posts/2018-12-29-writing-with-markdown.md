@@ -6,7 +6,6 @@ authors: ["Sage Kirk", "Mike Vance"]
 categories: ["Development", "Javascript", "Web Design"]
 tags: ["Writing"]
 description: Learn how to use Markdown to write blog posts. Understand front-matter and how it is used in templates.
-thumbnail: "assets/images/unsplash-CTivHyiTbFw-640x360.jpeg"
 image: "https://source.unsplash.com/CTivHyiTbFw/1600x900"
 ---
 
@@ -46,7 +45,6 @@ From 2012, a group of people including Jeff Atwood and John MacFarlane launched 
 
 In 2017, GitHub released a formal specification of their GitHub Flavored Markdown (GFM) that is based on CommonMark. It follows the CommonMark specification exactly except for tables, strikethrough, autolinks and task lists, which the GitHub spec has added as extensions.
 
-![unsplash](https://source.unsplash.com/3igFnx0L2pY/640x360)
 
 ### Markdown Extra
 
