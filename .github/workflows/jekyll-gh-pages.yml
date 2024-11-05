@@ -1,5 +1,4 @@
-name: +Update Jekyll site CI
-
+name: _Update Jekyll site CI_
 on:
   push:
     branches: [ master ]
