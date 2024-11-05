@@ -1,6 +1,6 @@
 baseurl: "/blog/"
 permalink: pretty
-title: "Jekyll Atlantic"
+title: "Данил Крыцын"
 collections_dir: collections
 markdown: kramdown
 highlighter: rouge
