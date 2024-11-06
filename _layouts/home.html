@@ -2,7 +2,11 @@
 layout: default
 ---
 
-{% include heading.html heading=page.heading %}
+<div class="max-w-lg mx-auto mb-8">
+    <img src="{{ site.imagesurl }}/author/aitid.jpg" class="rounded-full w-24 m-0 mr-4 float-left">
+  <p class="mb-2">Привет! Я, aitid, разработчик в IT индустрии.</p>
+  <p>В этом блоге я делюсь реальными задачами из коммерческой разработки и решениями, которые я использую в своей практике. Если вам интересны практические подходы и эффективные методы разработки, вы найдете здесь много полезной информации.</p>
+</div>
 
 <main class="py-6">
   {% for post in site.posts %}
