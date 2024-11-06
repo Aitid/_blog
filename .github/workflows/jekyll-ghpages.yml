@@ -39,7 +39,9 @@ jobs:
        build_dir: _site/
       env:
        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: List _site Directory Contents
       run: |
-        echo "+++++++++Lis"
+        echo "++++ _site directory ++++"
         wc -l _site/assets/css/style.css
 
