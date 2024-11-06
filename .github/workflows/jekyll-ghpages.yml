@@ -32,6 +32,11 @@ jobs:
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+
+    - name: List _site Directory Contents
+      run: |
+        echo "+++++ _site directory ++++"
+        wc -l _site/assets/css/style.css
         
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2.5.0
@@ -40,8 +45,4 @@ jobs:
       env:
        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: List _site Directory Contents
-      run: |
-        echo "++++ _site directory ++++"
-        wc -l _site/assets/css/style.css
 
