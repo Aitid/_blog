@@ -39,3 +39,9 @@ jobs:
        build_dir: _site/
       env:
        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: List _site Directory Contents
+      run: |
+        echo "Listing contents of the _site directory..."
+        ls -R _site
+
