@@ -43,5 +43,5 @@ jobs:
     - name: List _site Directory Contents
       run: |
         echo "Listing contents of the _site directory..."
-        ls -R _site
+        wc -l _site/assets/css/style.css
 
